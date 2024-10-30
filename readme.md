@@ -78,14 +78,8 @@ If you are having trouble installing the MindsDB extension on docker desktop use
    ```bash
    pip install mysql-connector-python mindsdb_sdk
    ```
-2. **Create a Python file** (e.g., `setup_mindsdb.py`) and copy the provided code into it.
-
-3. **Adjust the MySQL connection details** in your code if necessary to match the ones specified in your Docker Compose file.
-
-4. **Run the Python script**:
-   ```bash
-   python setup_mindsdb.py
-   ```
+2. Run ```python dummy_data.py``` to create & populate the mysql database
+3. Run ```python mindsdb_demo.py``` to integrate it into mindsdb, create a predictor, create a forecast & set a job that retrains the model every two days.
 
 ## Code Explanation
 - **MySQL Connection**: The code connects to the MySQL database using the specified configuration and creates a table named `house_sales`.
