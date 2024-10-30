@@ -35,14 +35,6 @@ This guide will walk you through the steps to set up a MySQL database, Adminer f
        restart: always
        ports:
          - "8080:8080"
-
-     mindsdb:
-       image: mindsdb/mindsdb
-       restart: always
-       ports:
-         - "47334:47334"  # MindsDB web interface
-       depends_on:
-         - mysql
    ```
 
 3. **Save the file**.
