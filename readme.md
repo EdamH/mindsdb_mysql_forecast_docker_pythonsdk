@@ -27,22 +27,31 @@ If you are having trouble installing the MindsDB extension on docker desktop use
    version: '3.8'
 
    services:
-     mysql:
-       image: mysql:5.7
-       restart: always
+     db:
+       image: mysql:8.0
        environment:
-         MYSQL_ROOT_PASSWORD: root_password
+         MYSQL_ROOT_PASSWORD: rootpassword
          MYSQL_DATABASE: complaints_db
          MYSQL_USER: mindsdb_user
          MYSQL_PASSWORD: mindsdb_password
        ports:
          - "3306:3306"
-
+       networks:
+         - mindsdb_desktop_network  # Connects to the MindsDB extension network
+   
      adminer:
        image: adminer
-       restart: always
        ports:
-         - "8080:8080"
+         - 8080:8080
+       networks:
+         - mindsdb_desktop_network
+   
+   networks:
+     mindsdb_desktop_network:  
+       external:
+         name: mindsdb_mindsdb-docker-extension-desktop-extension_default
+
+
    ```
 
 3. **Save the file**.
