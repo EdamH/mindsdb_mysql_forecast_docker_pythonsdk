@@ -7,6 +7,14 @@ This guide will walk you through the steps to set up a MySQL database, Adminer f
 - **Docker**: Ensure you have Docker Desktop installed on your machine.
 - **Docker Compose**: This usually comes with Docker Desktop, but verify it's available by running `docker-compose --version` in your terminal.
 
+## Install MindsDB Extension
+If you are running MindsDB via the Docker Desktop Extension, it is recommended to install the dependencies for Lightwood. To do this:
+Open Docker Desktop.
+Go to MindsDB Extension
+Go to Settings.
+Navigate to Manage Integrations.
+Follow the instructions to install the Lightwood dependencies. Note that it may take a few minutes to install these dependencies, depending on your network speed and bandwidth.
+If you are having trouble installing the MindsDB extension on docker desktop use the following guide => https://docs.mindsdb.com/setup/self-hosted/docker-desktop
 ## Step 1: Create a Docker Compose File
 1. **Create a new directory** for your project:
    ```bash
