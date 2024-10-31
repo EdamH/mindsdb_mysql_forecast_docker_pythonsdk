@@ -9,7 +9,7 @@ mysql_config = {
     "password": "mindsdb_password",
     "host": "localhost",
     "port": 3306,
-    "database": "complaints_db"  # Ensure this matches your MySQL setup
+    "database": "housing_db"  # Ensure this matches your MySQL setup
 }
 
 # Connect to MySQL and create table

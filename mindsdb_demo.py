@@ -13,7 +13,7 @@ try:
         "password": "mindsdb_password",
         "host": "db",
         "port": "3306",
-        "database": "complaints_db"
+        "database": "housing_db"
         }
     )
     print("MySQL integration with MindsDB created successfully.")
